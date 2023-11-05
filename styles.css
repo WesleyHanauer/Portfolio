@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.name {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.name h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.name h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.about-me {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.snowflakes {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: snowfall 5s linear infinite, snowflakesFade 5s linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+@keyframes snowflakesFade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
