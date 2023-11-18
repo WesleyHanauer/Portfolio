@@ -1,19 +1,12 @@
-body {
-    margin: 0;
-    overflow: hidden;
-    background-color: #222;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.container {
+    width: 100%;
+    height: 80%;
+    display: grid;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.content{
+    place-self: center;
+    font-size: larger;
 }
 
 .name {
@@ -37,7 +30,7 @@ body {
     border-radius: 10px;
     color: #fff;
     text-align: center;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 

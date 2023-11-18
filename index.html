@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Personal Website</title>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+    <title>Wesley Hanauer</title>
 </head>
 <body>
+
     <div class="container">
         <div class="content">
             <div class="name">
@@ -14,11 +18,42 @@
                 <h2>Software Engineer</h2>
             </div>
             <div class="about-me">
-                <p>I'm a software engineer, my motto is "build software focusing on performance and maintainability". Throughout my studying years I've been able to experience numerous different technologies, both in desktop application development and web development. My main goal is to get my first experience as an actual programmer, and later on be recognized for my awesome work.</p>
+                <p>
+                    I'm a software engineer, my motto is "build software focusing on performance and maintainability".
+                    Throughout my studying years I've been able to experience numerous different technologies,
+                    both in desktop application development and web development.
+                    My main goal is to get my first experience as an actual programmer,
+                    and later on be recognized for my awesome work.
+                </p>
             </div>
         </div>
     </div>
+
     <div class="snowflakes"></div>
+
+    <div id="personal-projects">
+        <div class="project-card">
+            <div class="video-placeholder">
+                <video id="video" controls>
+                    <source src="./test.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project-description">
+                <h3>Forex Trading App</h3>
+                <p>
+                    The Forex Trading App is a simulated platform meticulously
+                    crafted to replicate the experience of forex trading.
+                    In the world of forex, participants buy and sell currencies
+                    with the expectation of value appreciation. Our app mirrors this process,
+                    utilizing a websockets API to provide real-time values for both GDP and USD currencies.
+                    Additionally, it offers user-friendly features, including registration,
+                    login, and validation functionalities for a comprehensive trading simulation experience.
+                </p>
+                <p>Tech Stack: TypeScript, Node, React, Express, MongoDB, REST APIs, WebSockets API</p>
+                <a href="https://github.com/WesleyHanauer/Forex-Trading-App" target="_blank"> Github Repository</a>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="script.js"></script>
 </html>
